@@ -1,0 +1,38 @@
+.header {
+  color: #4d4d4d;
+  background-color: #fafafa;
+}
+
+.header-logo {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 10px;
+}
+
+.header-menu a {
+  color: #4d4d4d;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: calc(21px + (24 - 21) * ((100vw - 300px) / (1000 - 300)));
+}
+
+.header-menu a:hover {
+  background-color: #faf2ff;
+  transition: 0.4s;
+} 

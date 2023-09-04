@@ -1,0 +1,113 @@
+.formacao {
+  background-color: #303030;
+}
+
+.formacao-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.formacao-quadrados {
+  flex: 1;
+  max-width: 18.1rem;
+  min-width: 14.5rem;
+  position: relative;
+  background-color: #0d0b0e;
+  color: #fff;
+  border-radius: 0.75rem;
+  padding: 1.875rem;
+}
+
+.formacao-quadrados img {
+  position: absolute;
+  top: 1.875rem;
+  right: 1.875rem;
+}
+
+.formacao-quadrados h2 {
+  margin: 0.5rem 2rem 1.25rem 0rem;
+}
+
+.formacao-quadrados h3 {
+  font-style: italic;
+}
+
+.descricao {
+  margin-top: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+.formacao-detalhe {
+  color: #bdbdbd;
+  font-size: 18px;
+}
+
+.formacao-descricao {
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+.formacao-ano {
+  position: absolute;
+  color: #e8e8e8;
+  font-style: italic;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  font-size: 22px;
+}
+
+#form-um::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background: url("/img/formacao-teatro.svg") no-repeat center;
+  top: 1.8rem;
+  right: 2rem;
+}
+
+#form-dois::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background: url("/img/formacao-frontend.svg") no-repeat center;
+  top: 1.8rem;
+  right: 2rem;
+}
+
+#form-tres::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background: url("/img/formacao-web.svg") no-repeat center;
+  top: 1.8rem;
+  right: 2rem;
+}
+
+#form-quatro::before {
+  content: "";
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  background: url("/img/formacao-web.svg") no-repeat center;
+  top: 1.8rem;
+  right: 2rem;
+}
+
+@media (max-width: 600px) {
+  .formacao-quadrados {
+    max-width: 25rem;
+    min-width: 13.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .formacao-quadrados {
+    max-width: 30rem;
+    min-width: 13rem;
+  }
+}

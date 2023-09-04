@@ -1,0 +1,8 @@
+/* Importando demais arquivos de css */
+@import "css/global.css";
+@import "css/header.css";
+@import "css/sobremim.css";
+@import "css/formacao.css";
+@import "css/habilidades.css";
+@import "css/idiomas.css";
+@import "css/contato.css";

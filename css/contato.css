@@ -1,0 +1,67 @@
+.contato {
+  background-color: #d9d9d9;
+}
+
+.contato-container {
+  display: grid;
+}
+
+.contato-container h2 {
+  color: #303030;
+  margin-bottom: 1.75rem;
+}
+
+.formulario-de-contato {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  row-gap: 20px;
+}
+
+.formulario-de-contato div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+/* .formulario-de-contato input {
+  height: 25px;
+} */
+
+.formulario-de-contato p {
+  color: #4d4d4d;
+  margin-top: 1rem;
+  padding-left: 2.25rem;
+  line-height: 1.4;
+}
+
+.email::before {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background: url("../img/contato-email.svg") no-repeat center;
+  top: 0.7rem;
+  left: -0.2em;
+}
+
+.cel::before {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background: url("../img/contato-whatsapp.svg") no-repeat center;
+  top: 3.15rem;
+  left: -0.2em;
+}
+
+.contato-container::before {
+  content: "";
+  display: block;
+  width: 6.25rem;
+  height: 6.25rem;
+  position: absolute;
+  background: url("../img/enfeito-bottom.svg") no-repeat center;
+  top: 1rem;
+  right: 0rem;
+}

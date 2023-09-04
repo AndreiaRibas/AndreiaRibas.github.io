@@ -1,0 +1,165 @@
+.sobre-mim {
+    background-color: #f6f6f3;
+  }
+  
+  .sobre-mim-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    column-gap: 5rem;
+    align-items: center;
+  }
+  
+  .sobre-mim-container:before {
+    content: "";
+    display: block;
+    width: 6.25rem;
+    height: 6.25rem;
+    background: url("../img/enfeite-top.svg") no-repeat center;
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+  }
+  
+  .perfil {
+    justify-items: left;
+  }
+  
+  .perfil img {
+    width: auto;
+    height: auto;
+  }
+  
+  .foto-descricao {
+    justify-items: left;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .profissoes {
+    justify-self: right;
+  }
+  
+  .profissoes p {
+    margin-top: 2rem;
+  }
+  .sobre-mim-itens {
+    position: relative;
+    color: #141414;
+    font-size: calc(40px + (45 - 40) * ((100vw - 300px) / (800 - 300)));
+  }
+  
+  .sobre-mim-itens::before {
+    content: "";
+    background-color: #7623c9;
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 1.5rem;
+    left: -2.1rem;
+  }
+  
+  @media (max-width: 904px) {
+    .sobre-mim-container {
+      grid-template-columns: 0.5fr 1fr;
+      column-gap: 3rem;
+    }
+    .sobre-mim-itens::before {
+      width: 1rem;
+      height: 1rem;
+      top: 1.6rem;
+      left: -2rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .sobre-mim-itens::before {
+      width: 0.8rem;
+      height: 0.8rem;
+      top: 1.25rem;
+      left: -1.8rem;
+    }
+  }
+  
+  @media (max-width: 717px) {
+    .sobre-mim-container {
+      grid-auto-flow: unset;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 0rem;
+      row-gap: 2rem;
+    }
+    .profissoes {
+      justify-self: center;
+      padding-left: 1.5rem;
+    }
+    .perfil {
+      justify-items: unset;
+      justify-self: center;
+    }
+    .foto-descricao {
+      justify-items: center;
+    }
+  }
+  
+  @media (max-width: 451px) {
+    .sobre-mim-itens::before {
+      width: 0.6rem;
+      height: 0.6rem;
+      top: 1rem;
+      left: -1.4rem;
+    }
+  }
+  
+  @media (max-width: 328px) {
+    .sobre-mim-itens::before {
+      width: 0.5rem;
+      height: 0.5rem;
+      top: 0.85rem;
+      left: -1.3rem;
+    }
+  }
+  
+  @media (max-width: 355px) {
+    .sobre-mim-container:before {
+      content: "";
+      background: none;
+    }
+  }
+  
+  @media (max-width: 653px) {
+    .header-menu {
+      gap: 1.25rem;
+    }
+    .header-logo img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    .perfil img {
+      max-width: 20rem;
+      max-height: 20rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .perfil img {
+      max-width: 16rem;
+      max-height: 16rem;
+    }
+  }
+  
+  @media (max-width: 451px) {
+    .perfil img {
+      max-width: 14rem;
+      max-height: 14rem;
+    }
+  }
+  
+  @media (max-width: 359px) {
+    .perfil img {
+      max-width: 12rem;
+      max-height: 12rem;
+    }
+  }
+  

@@ -1,0 +1,72 @@
+.habilidades {
+  background-color: #f5f5ed;
+}
+
+.each-ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.habilidades-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px 30px;
+}
+
+.habilidades-list-container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.ctn p:first-child {
+  margin-bottom: 3rem;
+}
+
+.category {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.portfolio {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 75px;
+}
+
+.portfolio a {
+  font-size: 2rem;
+}
+
+.portfolio img {
+  padding-right: 20px;
+}
+
+/* Inserindo uma chave de abertura e uma de fechamento entre
+o texto com link para meu portfolio. O elemento é puramente
+decorativo, por isso estou inserindo-o por aqui */
+.portfolio::before {
+  content: "{";
+  display: block;
+  color: #7623c9;
+  font-size: 120px;
+  font-family: Rubik;
+  font-weight: 200;
+}
+
+.portfolio::after {
+  content: "};";
+  display: block;
+  color: #7623c9;
+  font-size: 120px;
+  font-family: Rubik;
+  font-weight: 200;
+}

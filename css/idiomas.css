@@ -1,0 +1,46 @@
+.idiomas {
+    background-color: #696969;
+  }
+  
+  .idiomas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .idiomas-quadrados {
+    flex: 1;
+    min-width: 8.5rem;
+    max-width: 16rem;
+    position: relative;
+    background-color: #26222a;
+    color: #fff;
+    border-radius: 0.75rem;
+    padding: 1.875rem;
+  }
+  
+  .idioma-nivel {
+    color: #c273f2;
+    margin-top: 1.5rem;
+  }
+  
+  /* @media para aplicar padrões dependendo da largura da tela */
+  @media (max-width: 500px) {
+    .idioma-nivel {
+      margin-top: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 460px) {
+    .idioma-nivel {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .idioma-nivel {
+      margin-top: 1rem;
+    }
+  }
+  
